@@ -1,0 +1,62 @@
+:root {
+  --bug-color: #A8B820; 
+  --fire-color: #F08030; 
+  --water-color: #6890F0;
+  --grass-color: #579c57;
+  --dark-color: #3b1c44;
+  --electric-color: #ffff00;
+  --fairy-color: #fd0280;
+  --flying-color: #00b1b8;
+  --dragon-color: #ff00ff;
+  --fighting-color: #363636;
+  --ghost-color: #c88dff;
+  --ground-color: #6e4d0e;
+  --ice-color: #c8e5ff;
+  --normal-color: #999999;
+  --poison-color: #36002b;
+  --psychic-color: #74003a;
+  --rock-color: #181818;
+  --steel-color: #cccccc;
+}
+
+.pokemon-card {
+  display: inline-block;
+  /* padding: 50px; */
+  border-radius: 5px;
+  margin: 5px;
+  width: 200px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pokemon-name {
+  text-decoration: none;
+  color: #fff; /* Default color for pokemon-name */
+}
+
+/* Define background colors based on pokemon types */
+.bug { background-color: var(--bug-color); }
+.fire { background-color: var(--fire-color); }
+.water { background-color: var(--water-color); }
+.grass { background-color: var(--grass-color); }
+.dark { background-color: var(--dark-color); }
+.electric { 
+  background-color: var(--electric-color); 
+}
+/* Set text color for Electric-type pokemon-name */
+.electric .pokemon-name {
+  color: black;
+}
+.fairy { background-color: var(--fairy-color); }
+.flying { background-color: var(--flying-color); }
+.dragon { background-color: var(--dragon-color); }
+.fighting { background-color: var(--fighting-color); }
+.ghost { background-color: var(--ghost-color); }
+.ground { background-color: var(--ground-color); }
+.ice { background-color: var(--ice-color); }
+.normal { background-color: var(--normal-color); }
+.poison { background-color: var(--poison-color); }
+.psychic { background-color: var(--psychic-color); }
+.rock { background-color: var(--rock-color); }
+.steel { background-color: var(--steel-color); }
